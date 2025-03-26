@@ -1,0 +1,914 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "user1",
+      "password": "123456",
+      "name": "张三",
+      "age": 68,
+      "gender": "男",
+      "phone": "13800138000",
+      "address": "北京市朝阳区健康路123号",
+      "createdAt": "2025-02-15T09:30:00Z"
+    },
+    {
+      "id": "2",
+      "username": "user2",
+      "password": "123456",
+      "name": "李四",
+      "age": 72,
+      "gender": "女",
+      "phone": "13900139000",
+      "address": "北京市海淀区和平街45号",
+      "createdAt": "2025-02-20T14:15:00Z"
+    },
+    {
+      "id": "3",
+      "username": "user3",
+      "password": "123456",
+      "name": "王五",
+      "age": 65,
+      "gender": "男",
+      "phone": "13700137000",
+      "address": "上海市静安区康健路78号",
+      "createdAt": "2025-03-05T10:45:00Z"
+    },
+    {
+      "id": "4",
+      "username": "user4",
+      "password": "123456",
+      "name": "赵六",
+      "age": 70,
+      "gender": "男",
+      "phone": "13600136000",
+      "address": "广州市天河区健康路56号",
+      "createdAt": "2025-03-10T08:30:00Z"
+    },
+    {
+      "id": "5",
+      "username": "user5",
+      "password": "123456",
+      "name": "钱七",
+      "age": 75,
+      "gender": "女",
+      "phone": "13500135000",
+      "address": "深圳市南山区科技路88号",
+      "createdAt": "2025-03-12T15:20:00Z"
+    },
+    {
+      "id": "6",
+      "username": "user6",
+      "password": "123456",
+      "name": "孙八",
+      "age": 67,
+      "gender": "男",
+      "phone": "13400134000",
+      "address": "成都市武侯区锦江路123号",
+      "createdAt": "2025-03-15T11:10:00Z"
+    },
+    {
+      "id": "7",
+      "username": "user7",
+      "password": "123456",
+      "name": "周九",
+      "age": 73,
+      "gender": "女",
+      "phone": "13300133000",
+      "address": "武汉市江汉区和平大道45号",
+      "createdAt": "2025-03-18T09:45:00Z"
+    },
+    {
+      "id": "8",
+      "username": "user8",
+      "password": "123456",
+      "name": "吴十",
+      "age": 69,
+      "gender": "男",
+      "phone": "13200132000",
+      "address": "杭州市西湖区文化路67号",
+      "createdAt": "2025-03-20T14:30:00Z"
+    },
+    {
+      "id": "9",
+      "username": "user9",
+      "password": "123456",
+      "name": "郑十一",
+      "age": 71,
+      "gender": "女",
+      "phone": "13100131000",
+      "address": "南京市鼓楼区健康路89号",
+      "createdAt": "2025-03-22T10:15:00Z"
+    },
+    {
+      "id": "10",
+      "username": "user10",
+      "password": "123456",
+      "name": "王十二",
+      "age": 74,
+      "gender": "男",
+      "phone": "13000130000",
+      "address": "重庆市渝中区解放路101号",
+      "createdAt": "2025-03-25T16:40:00Z"
+    }
+  ],
+  "healthRecords": [
+    {
+      "id": "record-1",
+      "userId": "1",
+      "date": "2025-03-25",
+      "weight": 68.5,
+      "bloodPressure": {
+        "systolic": 135,
+        "diastolic": 85
+      },
+      "bloodSugar": 5.8,
+      "pulse": 75,
+      "note": "今天感觉良好",
+      "createdAt": "2025-03-25T08:30:00Z"
+    },
+    {
+      "id": "record-2",
+      "userId": "1",
+      "date": "2025-03-24",
+      "weight": 68.7,
+      "bloodPressure": {
+        "systolic": 138,
+        "diastolic": 87
+      },
+      "bloodSugar": 6.0,
+      "pulse": 78,
+      "note": "有点疲劳",
+      "createdAt": "2025-03-24T08:30:00Z"
+    },
+    {
+      "id": "record-3",
+      "userId": "1",
+      "date": "2025-03-23",
+      "weight": 69.0,
+      "bloodPressure": {
+        "systolic": 140,
+        "diastolic": 88
+      },
+      "bloodSugar": 6.2,
+      "pulse": 80,
+      "note": "感觉血压有点高",
+      "createdAt": "2025-03-23T08:30:00Z"
+    },
+    {
+      "id": "record-4",
+      "userId": "1",
+      "date": "2025-03-22",
+      "weight": 69.2,
+      "bloodPressure": {
+        "systolic": 142,
+        "diastolic": 89
+      },
+      "bloodSugar": 6.3,
+      "pulse": 81,
+      "note": "今天有些头晕",
+      "createdAt": "2025-03-22T08:30:00Z"
+    },
+    {
+      "id": "record-5",
+      "userId": "1",
+      "date": "2025-03-21",
+      "weight": 68.9,
+      "bloodPressure": {
+        "systolic": 138,
+        "diastolic": 86
+      },
+      "bloodSugar": 6.1,
+      "pulse": 79,
+      "note": "睡眠质量不佳",
+      "createdAt": "2025-03-21T08:30:00Z"
+    },
+    {
+      "id": "record-6",
+      "userId": "2",
+      "date": "2025-03-25",
+      "weight": 62.3,
+      "bloodPressure": {
+        "systolic": 125,
+        "diastolic": 78
+      },
+      "bloodSugar": 5.5,
+      "pulse": 72,
+      "note": "状态良好",
+      "createdAt": "2025-03-25T09:15:00Z"
+    },
+    {
+      "id": "record-7",
+      "userId": "2",
+      "date": "2025-03-24",
+      "weight": 62.1,
+      "bloodPressure": {
+        "systolic": 128,
+        "diastolic": 79
+      },
+      "bloodSugar": 5.6,
+      "pulse": 73,
+      "note": "",
+      "createdAt": "2025-03-24T09:10:00Z"
+    },
+    {
+      "id": "record-8",
+      "userId": "2",
+      "date": "2025-03-23",
+      "weight": 62.4,
+      "bloodPressure": {
+        "systolic": 126,
+        "diastolic": 77
+      },
+      "bloodSugar": 5.4,
+      "pulse": 71,
+      "note": "今天多喝了水",
+      "createdAt": "2025-03-23T09:05:00Z"
+    },
+    {
+      "id": "record-9",
+      "userId": "2",
+      "date": "2025-03-22",
+      "weight": 62.5,
+      "bloodPressure": {
+        "systolic": 127,
+        "diastolic": 78
+      },
+      "bloodSugar": 5.5,
+      "pulse": 72,
+      "note": "早上散步30分钟",
+      "createdAt": "2025-03-22T09:00:00Z"
+    },
+    {
+      "id": "record-10",
+      "userId": "2",
+      "date": "2025-03-21",
+      "weight": 62.3,
+      "bloodPressure": {
+        "systolic": 129,
+        "diastolic": 80
+      },
+      "bloodSugar": 5.7,
+      "pulse": 74,
+      "note": "吃了点甜食",
+      "createdAt": "2025-03-21T09:30:00Z"
+    },
+    {
+      "id": "record-11",
+      "userId": "3",
+      "date": "2025-03-25",
+      "weight": 70.5,
+      "bloodPressure": {
+        "systolic": 145,
+        "diastolic": 90
+      },
+      "bloodSugar": 7.2,
+      "pulse": 82,
+      "note": "血糖和血压偏高，需要注意饮食",
+      "createdAt": "2025-03-25T07:45:00Z"
+    },
+    {
+      "id": "record-12",
+      "userId": "3",
+      "date": "2025-03-24",
+      "weight": 70.8,
+      "bloodPressure": {
+        "systolic": 148,
+        "diastolic": 92
+      },
+      "bloodSugar": 7.4,
+      "pulse": 83,
+      "note": "昨天吃了油腻食物",
+      "createdAt": "2025-03-24T07:50:00Z"
+    },
+    {
+      "id": "record-13",
+      "userId": "3",
+      "date": "2025-03-23",
+      "weight": 70.3,
+      "bloodPressure": {
+        "systolic": 142,
+        "diastolic": 88
+      },
+      "bloodSugar": 7.0,
+      "pulse": 80,
+      "note": "感觉还可以",
+      "createdAt": "2025-03-23T08:00:00Z"
+    },
+    {
+      "id": "record-14",
+      "userId": "3",
+      "date": "2025-03-22",
+      "weight": 70.2,
+      "bloodPressure": {
+        "systolic": 141,
+        "diastolic": 87
+      },
+      "bloodSugar": 6.9,
+      "pulse": 79,
+      "note": "今天按时服药",
+      "createdAt": "2025-03-22T07:55:00Z"
+    },
+    {
+      "id": "record-15",
+      "userId": "3",
+      "date": "2025-03-21",
+      "weight": 70.6,
+      "bloodPressure": {
+        "systolic": 144,
+        "diastolic": 89
+      },
+      "bloodSugar": 7.1,
+      "pulse": 81,
+      "note": "有些疲劳",
+      "createdAt": "2025-03-21T08:10:00Z"
+    },
+    {
+      "id": "record-16",
+      "userId": "4",
+      "date": "2025-03-25",
+      "weight": 72.3,
+      "bloodPressure": {
+        "systolic": 138,
+        "diastolic": 84
+      },
+      "bloodSugar": 6.1,
+      "pulse": 76,
+      "note": "今天状态不错",
+      "createdAt": "2025-03-25T10:15:00Z"
+    },
+    {
+      "id": "record-17",
+      "userId": "4",
+      "date": "2025-03-24",
+      "weight": 72.5,
+      "bloodPressure": {
+        "systolic": 140,
+        "diastolic": 85
+      },
+      "bloodSugar": 6.2,
+      "pulse": 77,
+      "note": "睡眠质量好",
+      "createdAt": "2025-03-24T10:10:00Z"
+    },
+    {
+      "id": "record-18",
+      "userId": "4",
+      "date": "2025-03-23",
+      "weight": 72.1,
+      "bloodPressure": {
+        "systolic": 137,
+        "diastolic": 83
+      },
+      "bloodSugar": 6.0,
+      "pulse": 75,
+      "note": "早上散步了一小时",
+      "createdAt": "2025-03-23T10:05:00Z"
+    },
+    {
+      "id": "record-19",
+      "userId": "4",
+      "date": "2025-03-22",
+      "weight": 72.4,
+      "bloodPressure": {
+        "systolic": 139,
+        "diastolic": 84
+      },
+      "bloodSugar": 6.1,
+      "pulse": 76,
+      "note": "感觉有点疲劳",
+      "createdAt": "2025-03-22T10:20:00Z"
+    },
+    {
+      "id": "record-20",
+      "userId": "4",
+      "date": "2025-03-21",
+      "weight": 72.6,
+      "bloodPressure": {
+        "systolic": 141,
+        "diastolic": 86
+      },
+      "bloodSugar": 6.3,
+      "pulse": 78,
+      "note": "胃口不太好",
+      "createdAt": "2025-03-21T10:25:00Z"
+    },
+    {
+      "id": "record-21",
+      "userId": "5",
+      "date": "2025-03-25",
+      "weight": 58.7,
+      "bloodPressure": {
+        "systolic": 130,
+        "diastolic": 80
+      },
+      "bloodSugar": 5.6,
+      "pulse": 73,
+      "note": "今天感觉很好",
+      "createdAt": "2025-03-25T09:30:00Z"
+    },
+    {
+      "id": "record-22",
+      "userId": "5",
+      "date": "2025-03-24",
+      "weight": 58.5,
+      "bloodPressure": {
+        "systolic": 132,
+        "diastolic": 81
+      },
+      "bloodSugar": 5.7,
+      "pulse": 74,
+      "note": "参加了太极拳活动",
+      "createdAt": "2025-03-24T09:35:00Z"
+    },
+    {
+      "id": "record-23",
+      "userId": "5",
+      "date": "2025-03-23",
+      "weight": 58.6,
+      "bloodPressure": {
+        "systolic": 131,
+        "diastolic": 80
+      },
+      "bloodSugar": 5.6,
+      "pulse": 73,
+      "note": "和老姐妹们聊天一整天",
+      "createdAt": "2025-03-23T09:40:00Z"
+    },
+    {
+      "id": "record-24",
+      "userId": "5",
+      "date": "2025-03-22",
+      "weight": 58.8,
+      "bloodPressure": {
+        "systolic": 133,
+        "diastolic": 82
+      },
+      "bloodSugar": 5.8,
+      "pulse": 75,
+      "note": "今天多吃了蔬菜水果",
+      "createdAt": "2025-03-22T09:25:00Z"
+    },
+    {
+      "id": "record-25",
+      "userId": "5",
+      "date": "2025-03-21",
+      "weight": 58.9,
+      "bloodPressure": {
+        "systolic": 134,
+        "diastolic": 83
+      },
+      "bloodSugar": 5.9,
+      "pulse": 76,
+      "note": "手机玩多了有点累",
+      "createdAt": "2025-03-21T09:20:00Z"
+    },
+    {
+      "id": "record-26",
+      "userId": "6",
+      "date": "2025-03-25",
+      "weight": 71.2,
+      "bloodPressure": {
+        "systolic": 135,
+        "diastolic": 82
+      },
+      "bloodSugar": 5.9,
+      "pulse": 74,
+      "note": "今天精神状态不错",
+      "createdAt": "2025-03-25T08:15:00Z"
+    },
+    {
+      "id": "record-27",
+      "userId": "6",
+      "date": "2025-03-24",
+      "weight": 71.4,
+      "bloodPressure": {
+        "systolic": 137,
+        "diastolic": 84
+      },
+      "bloodSugar": 6.0,
+      "pulse": 75,
+      "note": "昨晚睡眠不太好",
+      "createdAt": "2025-03-24T08:20:00Z"
+    },
+    {
+      "id": "record-28",
+      "userId": "6",
+      "date": "2025-03-23",
+      "weight": 71.3,
+      "bloodPressure": {
+        "systolic": 136,
+        "diastolic": 83
+      },
+      "bloodSugar": 5.9,
+      "pulse": 74,
+      "note": "和朋友下了一下午棋",
+      "createdAt": "2025-03-23T08:25:00Z"
+    },
+    {
+      "id": "record-29",
+      "userId": "6",
+      "date": "2025-03-22",
+      "weight": 71.5,
+      "bloodPressure": {
+        "systolic": 138,
+        "diastolic": 85
+      },
+      "bloodSugar": 6.1,
+      "pulse": 76,
+      "note": "今天情绪有些低落",
+      "createdAt": "2025-03-22T08:30:00Z"
+    },
+    {
+      "id": "record-30",
+      "userId": "6",
+      "date": "2025-03-21",
+      "weight": 71.1,
+      "bloodPressure": {
+        "systolic": 134,
+        "diastolic": 81
+      },
+      "bloodSugar": 5.8,
+      "pulse": 73,
+      "note": "今天心情不错",
+      "createdAt": "2025-03-21T08:10:00Z"
+    },
+    {
+      "id": "record-31",
+      "userId": "7",
+      "date": "2025-03-25",
+      "weight": 60.8,
+      "bloodPressure": {
+        "systolic": 128,
+        "diastolic": 79
+      },
+      "bloodSugar": 5.4,
+      "pulse": 70,
+      "note": "今天走了5000步",
+      "createdAt": "2025-03-25T11:30:00Z"
+    },
+    {
+      "id": "record-32",
+      "userId": "7",
+      "date": "2025-03-24",
+      "weight": 60.6,
+      "bloodPressure": {
+        "systolic": 126,
+        "diastolic": 77
+      },
+      "bloodSugar": 5.3,
+      "pulse": 69,
+      "note": "天气不错，心情好",
+      "createdAt": "2025-03-24T11:20:00Z"
+    },
+    {
+      "id": "record-33",
+      "userId": "7",
+      "date": "2025-03-23",
+      "weight": 60.7,
+      "bloodPressure": {
+        "systolic": 127,
+        "diastolic": 78
+      },
+      "bloodSugar": 5.4,
+      "pulse": 70,
+      "note": "小孙子来看我，很开心",
+      "createdAt": "2025-03-23T11:25:00Z"
+    },
+    {
+      "id": "record-34",
+      "userId": "7",
+      "date": "2025-03-22",
+      "weight": 60.9,
+      "bloodPressure": {
+        "systolic": 129,
+        "diastolic": 80
+      },
+      "bloodSugar": 5.5,
+      "pulse": 71,
+      "note": "今天有点头晕",
+      "createdAt": "2025-03-22T11:35:00Z"
+    },
+    {
+      "id": "record-35",
+      "userId": "7",
+      "date": "2025-03-21",
+      "weight": 61.0,
+      "bloodPressure": {
+        "systolic": 130,
+        "diastolic": 81
+      },
+      "bloodSugar": 5.6,
+      "pulse": 72,
+      "note": "今天感觉有点疲劳",
+      "createdAt": "2025-03-21T11:40:00Z"
+    },
+    {
+      "id": "record-36",
+      "userId": "8",
+      "date": "2025-03-25",
+      "weight": 69.4,
+      "bloodPressure": {
+        "systolic": 136,
+        "diastolic": 84
+      },
+      "bloodSugar": 6.0,
+      "pulse": 76,
+      "note": "今天状态还可以",
+      "createdAt": "2025-03-25T07:30:00Z"
+    },
+    {
+      "id": "record-37",
+      "userId": "8",
+      "date": "2025-03-24",
+      "weight": 69.6,
+      "bloodPressure": {
+        "systolic": 138,
+        "diastolic": 86
+      },
+      "bloodSugar": 6.1,
+      "pulse": 77,
+      "note": "昨晚看电视到很晚",
+      "createdAt": "2025-03-24T07:35:00Z"
+    },
+    {
+      "id": "record-38",
+      "userId": "8",
+      "date": "2025-03-23",
+      "weight": 69.3,
+      "bloodPressure": {
+        "systolic": 135,
+        "diastolic": 83
+      },
+      "bloodSugar": 5.9,
+      "pulse": 75,
+      "note": "今天走了一个小时",
+      "createdAt": "2025-03-23T07:40:00Z"
+    },
+    {
+      "id": "record-39",
+      "userId": "8",
+      "date": "2025-03-22",
+      "weight": 69.5,
+      "bloodPressure": {
+        "systolic": 137,
+        "diastolic": 85
+      },
+      "bloodSugar": 6.0,
+      "pulse": 76,
+      "note": "吃了点辣的食物",
+      "createdAt": "2025-03-22T07:45:00Z"
+    },
+    {
+      "id": "record-40",
+      "userId": "8",
+      "date": "2025-03-21",
+      "weight": 69.7,
+      "bloodPressure": {
+        "systolic": 139,
+        "diastolic": 87
+      },
+      "bloodSugar": 6.2,
+      "pulse": 78,
+      "note": "腿有点疼",
+      "createdAt": "2025-03-21T07:50:00Z"
+    },
+    {
+      "id": "record-41",
+      "userId": "9",
+      "date": "2025-03-25",
+      "weight": 63.7,
+      "bloodPressure": {
+        "systolic": 132,
+        "diastolic": 81
+      },
+      "bloodSugar": 5.7,
+      "pulse": 74,
+      "note": "今天状态不错",
+      "createdAt": "2025-03-25T10:30:00Z"
+    },
+    {
+      "id": "record-42",
+      "userId": "9",
+      "date": "2025-03-24",
+      "weight": 63.5,
+      "bloodPressure": {
+        "systolic": 130,
+        "diastolic": 80
+      },
+      "bloodSugar": 5.6,
+      "pulse": 73,
+      "note": "和老朋友聚会",
+      "createdAt": "2025-03-24T10:25:00Z"
+    },
+    {
+      "id": "record-43",
+      "userId": "9",
+      "date": "2025-03-23",
+      "weight": 63.6,
+      "bloodPressure": {
+        "systolic": 131,
+        "diastolic": 80
+      },
+      "bloodSugar": 5.7,
+      "pulse": 74,
+      "note": "睡眠质量不错",
+      "createdAt": "2025-03-23T10:20:00Z"
+    },
+    {
+      "id": "record-44",
+      "userId": "9",
+      "date": "2025-03-22",
+      "weight": 63.8,
+      "bloodPressure": {
+        "systolic": 133,
+        "diastolic": 82
+      },
+      "bloodSugar": 5.8,
+      "pulse": 75,
+      "note": "今天多喝了水",
+      "createdAt": "2025-03-22T10:35:00Z"
+    },
+    {
+      "id": "record-45",
+      "userId": "9",
+      "date": "2025-03-21",
+      "weight": 63.9,
+      "bloodPressure": {
+        "systolic": 134,
+        "diastolic": 83
+      },
+      "bloodSugar": 5.9,
+      "pulse": 76,
+      "note": "看了一部好电影",
+      "createdAt": "2025-03-21T10:40:00Z"
+    },
+    {
+      "id": "record-46",
+      "userId": "10",
+      "date": "2025-03-25",
+      "weight": 74.3,
+      "bloodPressure": {
+        "systolic": 145,
+        "diastolic": 88
+      },
+      "bloodSugar": 6.8,
+      "pulse": 79,
+      "note": "今天血压有点高",
+      "createdAt": "2025-03-25T09:45:00Z"
+    },
+    {
+      "id": "record-47",
+      "userId": "10",
+      "date": "2025-03-24",
+      "weight": 74.1,
+      "bloodPressure": {
+        "systolic": 143,
+        "diastolic": 86
+      },
+      "bloodSugar": 6.6,
+      "pulse": 78,
+      "note": "昨晚睡眠不好",
+      "createdAt": "2025-03-24T09:40:00Z"
+    },
+    {
+      "id": "record-48",
+      "userId": "10",
+      "date": "2025-03-23",
+      "weight": 74.5,
+      "bloodPressure": {
+        "systolic": 147,
+        "diastolic": 90
+      },
+      "bloodSugar": 6.9,
+      "pulse": 80,
+      "note": "有点头晕",
+      "createdAt": "2025-03-23T09:35:00Z"
+    },
+    {
+      "id": "record-49",
+      "userId": "10",
+      "date": "2025-03-22",
+      "weight": 74.2,
+      "bloodPressure": {
+        "systolic": 144,
+        "diastolic": 87
+      },
+      "bloodSugar": 6.7,
+      "pulse": 78,
+      "note": "今天服药了",
+      "createdAt": "2025-03-22T09:50:00Z"
+    },
+    {
+      "id": "record-50",
+      "userId": "10",
+      "date": "2025-03-21",
+      "weight": 74.0,
+      "bloodPressure": {
+        "systolic": 142,
+        "diastolic": 85
+      },
+      "bloodSugar": 6.5,
+      "pulse": 77,
+      "note": "今天多注意休息",
+      "createdAt": "2025-03-21T09:55:00Z"
+    }
+  ],
+  "healthReminders": [
+    {
+      "id": "reminder-1",
+      "userId": "1",
+      "title": "服用降压药",
+      "type": "medication",
+      "date": "2025-03-27",
+      "time": "08:00",
+      "repeat": "daily",
+      "description": "早餐后服用降压药物一次",
+      "isCompleted": false,
+      "createdAt": "2025-03-20T15:30:00Z"
+    },
+    {
+      "id": "reminder-2",
+      "userId": "1",
+      "title": "血压检查",
+      "type": "checkup",
+      "date": "2025-03-29",
+      "time": "09:30",
+      "repeat": "weekly",
+      "description": "每周六前往社区医院进行血压检查",
+      "isCompleted": false,
+      "createdAt": "2025-03-22T16:15:00Z"
+    },
+    {
+      "id": "reminder-3",
+      "userId": "1",
+      "title": "晨练散步",
+      "type": "exercise",
+      "date": "2025-03-27",
+      "time": "06:30",
+      "repeat": "daily",
+      "description": "每天早上散步30分钟",
+      "isCompleted": false,
+      "createdAt": "2025-03-15T19:00:00Z"
+    },
+    {
+      "id": "reminder-4",
+      "userId": "2",
+      "title": "服用钙片",
+      "type": "medication",
+      "date": "2025-03-27",
+      "time": "12:00",
+      "repeat": "daily",
+      "description": "午餐后服用钙片一次",
+      "isCompleted": false,
+      "createdAt": "2025-03-18T11:20:00Z"
+    },
+    {
+      "id": "reminder-5",
+      "userId": "2",
+      "title": "社区体检",
+      "type": "checkup",
+      "date": "2025-04-15",
+      "time": "10:00",
+      "repeat": "once",
+      "description": "参加社区组织的老年人体检活动",
+      "isCompleted": false,
+      "createdAt": "2025-03-10T14:00:00Z"
+    },
+    {
+      "id": "reminder-6",
+      "userId": "3",
+      "title": "服用降糖药",
+      "type": "medication",
+      "date": "2025-03-27",
+      "time": "07:30",
+      "repeat": "daily",
+      "description": "早餐前服用降糖药物一次",
+      "isCompleted": false,
+      "createdAt": "2025-03-01T08:40:00Z"
+    }
+  ],
+  "settings": {
+    "basicSettings": {
+      "systemName": "空巢老人健康管理系统",
+      "adminEmail": "admin@healthsystem.com",
+      "themeColor": "#409EFF",
+      "allowUserRegistration": true,
+      "recordsRetentionDays": 365
+    },
+    "reminderSettings": {
+      "enableAutoReminders": true,
+      "reminderTime": "08:00",
+      "bpHighThreshold": 140,
+      "bpDiastolicThreshold": 90,
+      "bloodSugarLowThreshold": 3.9,
+      "bloodSugarHighThreshold": 7.0,
+      "checkupReminderInterval": 30
+    },
+    "dataAnalysisSettings": {
+      "enableAnomalyDetection": true,
+      "anomalyThreshold": 20,
+      "healthReportInterval": 7,
+      "analysisTimeWindow": 30
+    }
+  }
+}

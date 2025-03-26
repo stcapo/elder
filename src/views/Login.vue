@@ -1,0 +1,182 @@
+\<template>
+  <div class="login-container">
+    <div class="login-card">
+      <div class="login-header">
+        <h2>空巢老人健康管理系统</h2>
+        <p>用户登录</p>
+      </div>
+      
+      <el-form 
+        ref="loginFormRef" 
+        :model="loginForm" 
+        :rules="loginRules" 
+        class="login-form" 
+        label-position="top"
+      >
+        <el-form-item label="用户名" prop="username">
+          <el-input 
+            v-model="loginForm.username" 
+            prefix-icon="User"
+            placeholder="请输入用户名" 
+          />
+        </el-form-item>
+        
+        <el-form-item label="密码" prop="password">
+          <el-input 
+            v-model="loginForm.password" 
+            prefix-icon="Lock" 
+            type="password" 
+            placeholder="请输入密码" 
+            @keyup.enter="handleLogin"
+          />
+        </el-form-item>
+        
+        <div class="btn-container">
+          <el-button 
+            type="primary" 
+            :loading="loading" 
+            class="login-btn" 
+            @click="handleLogin"
+          >
+            登录
+          </el-button>
+        </div>
+        
+        <div class="options-container">
+          <router-link to="/register" class="register-link">注册账号</router-link>
+          <router-link to="/admin/login" class="admin-link">管理员登录</router-link>
+        </div>
+      </el-form>
+    </div>
+  </div>
+</template>
+
+<script setup>
+import { ref, reactive, onMounted } from 'vue'
+import { useRouter, useRoute } from 'vue-router'
+import { useStore } from 'vuex'
+import { ElMessage } from 'element-plus'
+
+const router = useRouter()
+const route = useRoute()
+const store = useStore()
+
+// 登录表单引用
+const loginFormRef = ref(null)
+
+// 登录表单数据
+const loginForm = reactive({
+  username: '',
+  password: ''
+})
+
+// 表单验证规则
+const loginRules = {
+  username: [
+    { required: true, message: '请输入用户名', trigger: 'blur' }
+  ],
+  password: [
+    { required: true, message: '请输入密码', trigger: 'blur' }
+  ]
+}
+
+// 加载状态
+const loading = ref(false)
+
+// 处理登录
+const handleLogin = () => {
+  loginFormRef.value.validate(async (valid) => {
+    if (valid) {
+      loading.value = true
+      try {
+        await store.dispatch('login', loginForm)
+        
+        // 登录成功，跳转到重定向页面或默认页面
+        const redirectPath = route.query.redirect || '/user/dashboard'
+        router.push(redirectPath)
+        
+        ElMessage({
+          message: '登录成功',
+          type: 'success'
+        })
+      } catch (error) {
+        ElMessage.error(error.message || '登录失败，请检查用户名和密码')
+      } finally {
+        loading.value = false
+      }
+    }
+  })
+}
+
+// 挂载时执行
+onMounted(() => {
+  // 系统启动时已通过initializeData自动导入示例数据
+  console.log('登录页面已加载')
+})
+</script>
+
+<style scoped>
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('https://source.unsplash.com/random/1920x1080/?elderly,health') no-repeat center center;
+  background-size: cover;
+}
+
+.login-card {
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login-header h2 {
+  font-weight: bold;
+  font-size: 22px;
+  color: #409EFF;
+  margin-bottom: 10px;
+}
+
+.login-header p {
+  font-size: 16px;
+  color: #606266;
+}
+
+.login-form {
+  margin-top: 20px;
+}
+
+.btn-container {
+  margin-top: 30px;
+}
+
+.login-btn {
+  width: 100%;
+  font-size: 16px;
+  height: 44px;
+}
+
+.options-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.register-link, .admin-link {
+  color: #409EFF;
+  text-decoration: none;
+}
+
+.register-link:hover, .admin-link:hover {
+  text-decoration: underline;
+}
+</style>
