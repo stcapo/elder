@@ -57,7 +57,14 @@ front/
 
 ```bash
 cd front
-npm install
+
+npm install --legacy-peer-deps
+or
+npm install --force
+or
+npm install 
+or
+npm uninstall chart.js && npm install chart.js@3.9.1
 ```
 
 ### 开发模式运行
